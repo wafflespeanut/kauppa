@@ -39,7 +39,7 @@ let package = Package(
             dependencies: ["KauppaCore", "Kitura"]),
         .testTarget(
             name: "KauppaProductsTests",
-            dependencies: ["KauppaCore", "Kitura"]),
+            dependencies: ["KauppaCore", "KauppaProducts", "Kitura"]),
         .testTarget(
             name: "KauppaTaxTests",
             dependencies: ["KauppaCore", "Kitura"])

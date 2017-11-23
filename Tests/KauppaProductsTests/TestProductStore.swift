@@ -2,6 +2,7 @@ import Foundation
 import XCTest
 
 @testable import KauppaCore
+@testable import KauppaProducts
 
 class TestProductsService: XCTestCase {
     var store = MemoryStore()
@@ -14,6 +15,7 @@ class TestProductsService: XCTestCase {
     }
 
     override func setUp() {
+        let _ = ProductMemoryStore()
         store = MemoryStore()
 
         super.setUp()
